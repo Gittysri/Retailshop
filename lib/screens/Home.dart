@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:retailshop/screens/Order.dart';
+import 'package:retailshop/screens/Product.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -17,16 +19,22 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.only(top: 680),
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           IconButton(
-            color: Colors.orangeAccent,
-            onPressed: () {},
+            color: Color.fromARGB(255, 0, 0, 0),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Product()));
+            },
             icon: Icon(FontAwesomeIcons.bagShopping),
             splashColor: Color.fromARGB(219, 228, 192, 14),
             hoverColor: Colors.blueGrey,
             iconSize: 50,
           ),
           IconButton(
-            color: Colors.blue,
-            onPressed: () {},
+            color: Color.fromARGB(255, 0, 0, 0),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Order()));
+            },
             icon: Icon(FontAwesomeIcons.cartShopping),
             splashColor: Colors.lightBlueAccent,
             iconSize: 45,
