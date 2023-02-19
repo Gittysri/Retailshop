@@ -63,6 +63,10 @@ flutter:
   assets:
     - lib/images/Iphone.png
     - lib/images/Samsung.png
+    - lib/images/Camera.png
+    - lib/images/Headphone.png
+    - lib/images/Laptop.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

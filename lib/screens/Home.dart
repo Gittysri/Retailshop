@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 184, 184, 179),
+      backgroundColor: Color.fromARGB(255, 230, 230, 227),
 
       // appBar: AppBar(
       //   title: Text("Home"),
@@ -18,26 +18,36 @@ class Home extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(top: 680),
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-          IconButton(
-            color: Color.fromARGB(255, 0, 0, 0),
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Product()));
-            },
-            icon: Icon(FontAwesomeIcons.bagShopping),
-            splashColor: Color.fromARGB(219, 228, 192, 14),
-            hoverColor: Colors.blueGrey,
-            iconSize: 50,
+          Column(
+            children: [
+              IconButton(
+                color: Color.fromARGB(255, 0, 0, 0),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Product()));
+                },
+                icon: Icon(FontAwesomeIcons.bagShopping),
+                splashColor: Color.fromARGB(219, 228, 192, 14),
+                hoverColor: Colors.blueGrey,
+                iconSize: 30,
+              ),
+              Text("Products".toUpperCase())
+            ],
           ),
-          IconButton(
-            color: Color.fromARGB(255, 0, 0, 0),
-            onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Order()));
-            },
-            icon: Icon(FontAwesomeIcons.cartShopping),
-            splashColor: Colors.lightBlueAccent,
-            iconSize: 45,
+          Column(
+            children: [
+              IconButton(
+                color: Color.fromARGB(255, 0, 0, 0),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Order()));
+                },
+                icon: Icon(FontAwesomeIcons.cartShopping),
+                splashColor: Colors.lightBlueAccent,
+                iconSize: 30,
+              ),
+              Text("Orders".toUpperCase())
+            ],
           )
         ]),
       ),
