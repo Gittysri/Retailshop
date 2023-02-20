@@ -9,12 +9,13 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 230, 230, 227),
+      backgroundColor: Color.fromARGB(255, 187, 186, 185),
 
       // appBar: AppBar(
       //   title: Text("Home"),
       //   backgroundColor: Color.fromARGB(255, 59, 14, 57),
       // ),
+
       body: Padding(
         padding: const EdgeInsets.only(top: 680),
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
